@@ -4,6 +4,7 @@ const blogPostSchema = new mongoose.Schema({
     title: {
         type: String,
         required: [true, "A Blog Post must have a title"],
+        unique: true
     },
     content: {
         type: String,

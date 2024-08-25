@@ -7,7 +7,7 @@ const postController = require('../controllers/blogPostController');
 // })
 
 router.get('/',postController.getAllPost);
-router.post('',postController.createPost);
+router.post('/',postController.createPost);
 router.get('/:id',postController.getPostById);
 router.put('/:id',postController.updatePost);
 router.delete('/:id',postController.deletePost);
